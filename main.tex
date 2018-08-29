@@ -1,0 +1,82 @@
+\documentclass[a4paper,12pt,twoside]{article}
+
+\title{\Huge \textbf{RISC-V Verification Methodology}\\\Large{Version 0.1}}
+\author{Lavanya Jagan}
+\date
+
+\usepackage{tocbibind}
+\usepackage{import}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{fancyhdr}
+\usepackage{tabto}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{underscore}
+\usepackage{hyperref}
+\usepackage{tabu}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=blue,      
+    urlcolor=blue,
+}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+\makeatletter
+\let\runauthor\@author
+\let\runtitle\@shorttitle
+\makeatother
+\lhead{Core Verification}
+\rhead{Shakti Processor Systems}
+\lfoot{\tiny RISE LAB, CSE Dept., IIT-Madras}
+\rfoot{\tiny Email: shakti.iitm@gmail.com}
+\cfoot{\thepage}
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\footrulewidth}{1pt}
+\makeindex
+
+
+\begin{document}
+\maketitle
+\newpage
+\tableofcontents{}
+\newpage
+\listoffigures
+\newpage
+\listoftables
+\newpage
+\section{Document Description}
+\subsection{Abstract}
+This document describes the verification methodology used to simulate RISCV processor design. It provides the test plans developed for the specification features of riscv spec and riscv privi spec, details of the test bench components, generation and development of tests.\\\\
+The document is relevant for all classes of SHAKTI processors and the deviations based on the class will be specified as and when necessary.
+\subsection{Version Control}
+\begin{tabu} to 0.8\textwidth { | X[l] | X[c] |  }
+ \hline
+ 0.1 & Initial Draft\\
+ \hline
+   &   \\
+\hline
+\end{tabu}
+\subsection{Terms and Abbreviations}
+\section{Introductory Chapter}
+\subsection{Design Diagram}
+\subsection{Configurations}
+\subsection{Memory Map}
+\section{Test Plan}
+\section{Test Bench Components}
+\subsection{Clock and reset drivers}
+\subsection{Interface components}
+\section{Simulation Environment}
+\subsection{Directory structure}
+\section{Tests}
+\subsubsection{Commands Usage}
+\section{Coverage Metrics}
+\section{References}
+
+
+\printindex
+%\bibliographystyle{plain}
+%\bibliography{references}
+\end{document}
